@@ -32,7 +32,7 @@ routes.get('/musica', (req, res) => {
 })
 
 routes.get('/streamMusica', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html')
+  res.sendFile(__dirname + '/views/music.html')
 })
 
 module.exports = routes

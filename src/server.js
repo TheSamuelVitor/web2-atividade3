@@ -4,7 +4,7 @@ const http = require('http')
 
 const app = express()
 
-app.use('/', require('./routes/music'))
+app.use('/musica', require('./routes/music'))
 app.use('/', require('./routes/football-games'))
 
 const server = http.createServer(app)

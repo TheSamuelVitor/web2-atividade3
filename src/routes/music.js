@@ -5,7 +5,7 @@ const fs= require('fs')
 
 const routes = express.Router()
 
-routes.get('/musica', (req, res) => {
+routes.get('/', (req, res) => {
 
   const range = req.headers.range
   const musica =  __dirname + '/src/routes/X2Download.app - Alok - Me and You Feat. IRO (Radio edit) (128 kbps).mp3'
@@ -31,7 +31,7 @@ routes.get('/musica', (req, res) => {
 
 })
 
-routes.get('/streamMusica', (req, res) => {
+routes.get('/stream', (req, res) => {
   res.sendFile(__dirname + '/views/music.html')
 })
 

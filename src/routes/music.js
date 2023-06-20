@@ -8,7 +8,7 @@ const routes = express.Router()
 routes.get('/', (req, res) => {
 
   const range = req.headers.range
-  const musica =  __dirname + '/src/routes/X2Download.app - Alok - Me and You Feat. IRO (Radio edit) (128 kbps).mp3'
+  const musica =  __dirname + '/X2Download.app - Alok - Me and You Feat. IRO (Radio edit) (128 kbps).mp3'
   const musicaSize = fs.statSync(musica).size
 
   const chunkSize = 1 * 1e+5
